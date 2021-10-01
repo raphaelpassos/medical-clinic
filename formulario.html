@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Conta:</legend>
+                <div>
+                    <label> Email:</label>
+                    <input type="email" name="email" required minlength="5" maxlength="256"/>
+                </div>
+                <div>
+                    <label>Senha:</label>
+                    <input type="password" name="senha"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" placeholder="Raphael" name="nome"/>
+                 </div>
+                 <div>
+                    <label>Telefone:</label>
+                    <input type="text" placeholder="Ex: (21) 9999-9999" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" name="telefone"/>
+                 </div>
+                 <div>
+                    <label>Sexo:</label>
+                    <input type="radio" value="Masculino" name="sexo"/>
+                    <label>Masculino</label>
+                    <input type="radio" value="Feminino" name="sexo"/>
+                    <label>Feminino</label>
+                    <input type="radio" value="Não Binário" name="sexo" checked/>
+                    <label>Não Binário</label>
+                </div>
+                <div>
+                    <label>Data:</label>
+                    <input type="date" name="data_nascimento">
+                </div>
+                <div>
+                    <label>Foto de perfil</label>
+                    <input type="file" accept="image/*" name="foto"/>
+                </div>
+            </fieldset>
+          <fieldset>
+              <legend>Endereço</legend>
+              <div>
+                <label>Rua:</label>
+                <input type="text" name="endereco_rua"/>
+             </div>
+             <div>
+                 <label>Complemento:</label> 
+                 <input type="text"name="endereco_complemento"/>   
+             </div>
+             <div>
+                <label> Número:</label>
+                <input type="number" min="1" max="9999" name="endereco_numero"/>
+            </div>
+             <div>
+                 <label>Cidade:</label>
+                 <input type="text" name="endereco_cidade"/>
+             </div>
+             <div>
+                <label>Estado:</label>
+                <select name="endereco_estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantis</option>
+                </select>
+            </div>
+          </fieldset>
+          <fieldset>
+              <legend>Anuncio</legend>
+              <div>
+                <label> Como conhececeu a Clínica Médica Sul?</label>
+                <textarea name="como_conheceu_o_site" maxlength="256" placeholder="Explique para a gente como você conheceu nossa Clínica "></textarea>
+            </div>
+            <div>
+                <input type="checkbox" checked name="receber_anuncio"/>
+                <label> Desejo receber ofertas por e-mail</label>
+            </div>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
